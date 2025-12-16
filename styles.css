@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    height: 696px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 24px 156px;
+}
+
+.gallery-image {
+    display: block;
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-image:hover {
+    transition: transform 250ms ease;
+    transform: scale(1.1);
+}
